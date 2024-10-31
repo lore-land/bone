@@ -24,7 +24,7 @@ async fn main() -> std::io::Result<()> {
     // Get the static files path
     let static_files_path = env::var("STATIC_FILES_PATH").unwrap_or_else(|_| "./static".to_string());
     let static_files_path = PathBuf::from(static_files_path);
-    println!("http://localhost:6060");
+    println!("http://localhost:8080");
 
     // Start the HTTP server
     HttpServer::new(move || {
